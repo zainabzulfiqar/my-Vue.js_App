@@ -1,0 +1,41 @@
+#add-blog *{
+    box-sizing: border-box;
+}
+#add-blog{
+    margin: 20px auto;
+    max-width: 500px;
+    text-align: left;
+    font-size: x-small;
+}
+label{
+    display: block;
+    margin: 20px 0 10px;
+    text-align: left;
+}
+input[type="text"],textarea{
+    display: inline-block;
+    width: 50%;
+    padding: 4px;
+    font-size: x-small;
+}
+#preview{
+    padding: 10px 10px;
+    width: 50% ;
+    border: 1px dotted #ccc;
+    margin: 20px 0;
+    display: inline-block;
+    
+}
+h3{
+    margin-top: 10px;
+}
+#checkboxes input{
+    display: inline-block;
+    margin-right: 10px;
+    font-size: x-small;
+}
+#checkboxes label{
+    display: inline-block;
+    font-size: x-small;
+
+}

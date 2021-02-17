@@ -1,0 +1,26 @@
+#bag{
+    width: 50px;
+    height:100px;
+    margin: 0 auto;
+    margin-bottom: auto;
+    background: url(../../images/bag.png) center no-repeat;
+    background-size: 80%;
+}
+#bag.burst{
+    background:url(../../images/bag-burst.png) center no-repeat;
+    background-size: 80%;
+
+}
+#bag-health{
+    width: 200px;
+    border: 2px solid #000;
+    margin:0 auto 20px auto;  
+}
+#bag-health div{
+    height: 20px;
+    background:crimson;
+}
+#controls{
+    width: 120px;
+    margin: 0 auto;
+}

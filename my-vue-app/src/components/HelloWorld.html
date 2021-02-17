@@ -1,0 +1,41 @@
+
+<div class="hello">
+    <h1>Events</h1>
+    
+    <input v-model="age">
+    <button @click="ageIncrement(1)">Add</button>
+    <button @click="ageDecrement(1)">Subtract</button>
+    <button @dblclick="ageIncrement(10)">Add 10 years</button>
+    <button @dblclick="ageDecrement(10)">Subtract 10 years</button>
+    <p>My age is {{age}}</p>
+    <a @click="click()" v-bind:href="link">GO TO Youtube</a>
+    <!-- <div id="canvas" @mousemove="updateXY">{{x}},{{y}}</div>
+     -->
+     <div id="show-data">
+         <p>Show all items</p>
+         <div v-for='ninja in ninjas' class='single-item'>
+             {{ninja}}
+
+         </div>
+         
+         
+         <input type='number' v-model="id" >
+         <input type='text' v-model="name">
+         <button @click='addNinja()'>Add Ninja</button>
+         <button @click='deleteNinja()'>Delete Ninja</button>
+         <button @click='updateNinja()'>Update Ninja</button>
+     
+        </div>
+     <p>CONDITIONALS</p>
+     <button @click="error=!error">Toggle Error</button>
+     <button @click="success=!success" >Toggle Success</button>
+     <!-- <p v-if="error">There has been an error</p>
+     <p v-else-if="success">successssss!!!!</p> -->
+     <p v-show="error">There has been an error!!!!</p>
+     
+     <p v-show="success">successssss!!!!</p>
+     <p>Looping through......</p>
+     <ul>
+         <li v-for="character of characters">=>{{character}}</li>
+     </ul>
+  </div>

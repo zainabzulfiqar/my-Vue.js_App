@@ -1,0 +1,44 @@
+<div>
+    
+    <div id="add-blog">
+        <h2>Add a new Blog Post</h2>
+        <form>
+            <label>Blog Title:</label>
+            <input type="text" placeholder="your title" v-model.lazy="blog.title" required>
+            <label>Blog Content:</label>
+            <input type="text" placeholder="your content" v-model.lazy="blog.content" required>
+            <!-- <textarea name="area" id="blog-area" cols="30" rows="10"></textarea> -->
+            <div id="checkboxes">
+                <label>Ninjas</label>
+                <input type="checkbox" value="ninjas" v-model="blog.catagories">
+                <label>Wizards</label>
+                <input type="checkbox" value="wizards" v-model="blog.catagories">
+                <label>Cheese</label>
+                <input type="checkbox" value="cheese" v-model="blog.catagories"> 
+                <label>Mario</label>
+                <input type="checkbox" value="mario" v-model="blog.catagories">
+            </div>
+            <label>Author:</label>
+            <select v-model="blog.author">
+                <option v-for="author in authors">{{author}}</option>
+            </select>
+            <p v-if='!submitted'>
+                Thanks for adding a blog!!!!
+            </p>
+        </form>
+
+        <div id="preview">
+            <h3>Preview Blog</h3>
+            <p>Blog Title:{{blog.title}}</p>
+            <p>Blog Content:</p>
+            <p>{{blog.content}}</p>
+            <p>Blog catagories:</p>
+            <ul>
+                <li v-for="catagory in blog.catagories">{{catagory}}</li>
+            </ul>
+            <p>Blog Author:{{blog.author}}</p>
+
+        </div>
+        
+    </div>
+</div>

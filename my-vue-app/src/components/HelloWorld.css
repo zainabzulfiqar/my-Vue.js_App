@@ -1,0 +1,39 @@
+h3 {
+    margin: 40px 0 0;
+  }
+  ul {
+    /* list-style-type: none; */
+    list-style-type: disc;
+    padding: 0;
+  }
+  .lists{
+    list-style-type: square;
+    display: table;
+
+  }
+  li {
+    display: inline-block;
+    margin: 0 10px;
+    text-align: left;
+  }
+  a {
+    color: #42b983;
+  }
+  #canvas{
+      width:600px;
+      padding:200px 20px;
+      text-align:center;
+      border: 1px solid #333;
+  }
+  #show-data{
+    max-width: 800px;
+    margin: 0 auto;
+
+  }
+  .single-blog{
+    padding:20px;
+    margin: 20px,0;
+    box-sizing: border-box;
+    background:#eee;
+
+  }

@@ -1,0 +1,16 @@
+<div>
+    <h1>The PunchBag Game</h1>
+    <div id="bag" v-bind:class="{burst:ended}">
+
+    </div>
+    <!--bag Health-->
+    <div id="bag-health">
+        <div v-bind:style="{width:health+'%'}">
+        </div>
+    </div>
+    <!--control buttons-->
+    <div id="controls">
+        <button @click="punch()" v-show="!ended">Punch</button>
+        <button @click="restart()">Restart</button>
+    </div>
+</div>
